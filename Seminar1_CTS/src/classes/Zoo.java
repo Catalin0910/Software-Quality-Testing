@@ -37,13 +37,13 @@ public class Zoo {
 	}
 
 	public void feedAnimals() {
-		for (Animal a : animals) {
-			zookeeper.feed(a);
+		for (Animal animal : animals) {
+			zookeeper.feed(animal);
 		}
 	}
 	
-	public void addAnimal(Animal a) {
-		animals.add(a);
+	public void addAnimal(Animal animal) {
+		animals.add(animal);
 	}
 	
 

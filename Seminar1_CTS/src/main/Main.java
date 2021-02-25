@@ -21,10 +21,10 @@ public class Main {
 		
 		zoo.feedAnimals();
 		
-		Zebra z1 = new Zebra("Zebruta", 200);
-		Zebra z2  = new Zebra("Zebruta 2", 300, 40);
-		zoo.addAnimal(z1);
-		zoo.addAnimal(z2);
+		Zebra zebra1 = new Zebra("Zebruta", 200);
+		Zebra zebra2  = new Zebra("Zebruta 2", 300, 40);
+		zoo.addAnimal(zebra1);
+		zoo.addAnimal(zebra2);
 		
 		zoo.feedAnimals();
 		
