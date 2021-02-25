@@ -1,9 +1,15 @@
 package main;
 
+import classes.*;
+
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Primul Seminar Uraa");
+		
+		Zookeeper zookeper = new Zookeeper("Marcel");
+		Zoo zoo = new Zoo();
+		zoo.setZookeeper(zookeper);
+		
 	}
 
 }
