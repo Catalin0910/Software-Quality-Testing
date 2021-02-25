@@ -19,7 +19,7 @@ public class Zookeeper {
 	}
 
 	public void feed(Animal a) {
-		System.out.println("Animalul" + a.getName() + " a fost hranil");
+		System.out.println("Animalul " + a.getName() + " a fost hranit de catre " + name);
 	}
 
 }
