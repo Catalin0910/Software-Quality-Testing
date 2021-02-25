@@ -19,7 +19,7 @@ public class Main {
 		zoo.addAnimal(g1);
 		zoo.addAnimal(g2);
 		
-		
+		zoo.feedAnimals();
 		
 		Zebra z1 = new Zebra("Zebruta", 200);
 		Zebra z2  = new Zebra("Zebruta 2", 300, 40);
