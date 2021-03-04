@@ -7,12 +7,18 @@ import java.util.List;
 import java.util.Scanner;
 
 import ro.ase.cts.classes.Angajat;
+import ro.ase.cts.classes.Aplicant;
 
-public class AngajatReader {
-	public static List<Angajat> readAngajati(String file) throws FileNotFoundException {
-		Scanner input2 = new Scanner(new File(file));
+public class AngajatReader extends AplicantReader {
+	public AngajatReader(String fileName) {
+		super(fileName);
+		// TODO Auto-generated constructor stub
+	}
+
+	public List<Aplicant> citesteAplicant() throws FileNotFoundException {
+		Scanner input2 = new Scanner(new File(super.getFileName()));
 		input2.useDelimiter(",");
-		List<Angajat> angajati = new ArrayList<Angajat>();
+		List<Aplicant> aplicants = new ArrayList<Aplicant>();
 
 		while (input2.hasNext()) {
 			String nume = input2.next();
@@ -26,11 +32,10 @@ public class AngajatReader {
 			int salariu = input2.nextInt();
 			String ocupatie = input2.next();
 			Angajat a = new Angajat(nume, prenume, varsta, punctaj, nr, vect, salariu, ocupatie);
-			angajati.add(a);
+			aplicants.add(a);
 		}
 		input2.close();
-		return angajati;
+		return aplicants;
 	}
 
-	
 }
