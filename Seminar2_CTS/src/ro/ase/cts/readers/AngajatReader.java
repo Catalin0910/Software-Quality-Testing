@@ -21,18 +21,11 @@ public class AngajatReader extends AplicantReader {
 		List<Aplicant> aplicants = new ArrayList<Aplicant>();
 
 		while (input2.hasNext()) {
-			String nume = input2.next();
-			String prenume = input2.next();
-			int varsta = input2.nextInt();
-			int punctaj = input2.nextInt();
-			int nr = input2.nextInt();
-			String[] vect = new String[5];
-			for (int i = 0; i < nr; i++)
-				vect[i] = input2.next();
-			int salariu = input2.nextInt();
-			String ocupatie = input2.next();
-			Angajat a = new Angajat(nume, prenume, varsta, punctaj, nr, vect, salariu, ocupatie);
-			aplicants.add(a);
+			Angajat angajat = new Angajat();
+			super.readAplicant(input2, angajat);
+			angajat.setSalariu(input2.nextInt());
+			angajat.setOcupatie(input2.next());
+			aplicants.add(angajat);
 		}
 		input2.close();
 		return aplicants;
