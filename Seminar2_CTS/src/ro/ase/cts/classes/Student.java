@@ -23,9 +23,6 @@ public class Student extends Aplicant {
 		this.an_studii = an_studii;
 	}
 	
-	public static void setSumaFinanteare(int sumaFinanteare) {
-		Student.sumaFinanteare = sumaFinanteare;
-	}
 
 	public Student() {
 		super();
@@ -56,5 +53,15 @@ public class Student extends Aplicant {
 	public float getSumaFinantata() {
 		return sumaFinanteare;
 	}
+
+	public static float getSumaFinanteare() {
+		return sumaFinanteare;
+	}
+
+	public static void setSumaFinanteare(float sumaFinanteare) {
+		Student.sumaFinanteare = sumaFinanteare;
+	}
+	
+	
 
 }

@@ -23,9 +23,6 @@ public class Elev extends Aplicant {
 		this.tutore = tutore;
 	}
 
-	public static void setSumaFinanteare(float sumaFinanteare) {
-		Elev.sumaFinanteare = sumaFinanteare;
-	}
 
 	@Override
 	public String toString() {
@@ -56,5 +53,15 @@ public class Elev extends Aplicant {
 		// TODO Auto-generated method stub
 		return sumaFinanteare;
 	}
+
+	public static float getSumaFinanteare() {
+		return sumaFinanteare;
+	}
+
+	public static void setSumaFinanteare(float sumaFinanteare) {
+		Elev.sumaFinanteare = sumaFinanteare;
+	}
+	
+	
 
 }

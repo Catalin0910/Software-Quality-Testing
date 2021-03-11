@@ -23,10 +23,6 @@ public class Angajat extends Aplicant {
 		this.salariu = salariu;
 	}
 
-	public static void setSumaFinanteare(float sumaFinanteare) {
-		Angajat.sumaFinanteare = sumaFinanteare;
-	}
-
 	public Angajat(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumire_Proiecte,
 			int salariu, String ocupatie) {
 		super(nume, prenume, varsta, punctaj, nr_proiecte, denumire_Proiecte);
@@ -56,6 +52,14 @@ public class Angajat extends Aplicant {
 	@Override
 	public float getSumaFinantata() {
 		return sumaFinanteare;
+	}
+
+	public static float getSumaFinanteare() {
+		return sumaFinanteare;
+	}
+
+	public static void setSumaFinanteare(float sumaFinanteare) {
+		Angajat.sumaFinanteare = sumaFinanteare;
 	}
 
 }
