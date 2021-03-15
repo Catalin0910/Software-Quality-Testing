@@ -32,7 +32,7 @@ public abstract class Aplicant {
 
 	public void afiseazaStatus(Proiect proiect) {
 		System.out.print("Aplicantul " + nume + " " + prenume);
-		if (punctaj > proiect.getPragAdmitere()) {
+		if (punctaj > Proiect.getPragAdmitere()) {
 			System.out.println(" a fost acceptat.");
 		} else {
 			System.out.println(" nu a fost acceptat.");

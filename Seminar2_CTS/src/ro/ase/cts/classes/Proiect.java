@@ -5,7 +5,7 @@ public class Proiect {
 	
 	
 	public Proiect(int pragAdmitere) {
-		this.pragAdmitere = pragAdmitere;
+		Proiect.pragAdmitere = pragAdmitere;
 	}
 
 
