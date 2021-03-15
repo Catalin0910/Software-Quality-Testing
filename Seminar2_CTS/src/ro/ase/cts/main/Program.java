@@ -30,6 +30,7 @@ public class Program {
 			Proiect poriect = new Proiect(80);
 			for (Aplicant angajat : listaAplicanti) {
 				System.out.println(angajat.toString());
+				angajat.afiseazaStatus(poriect);
 				System.out.println(angajat.getSumaFinantata());
 			}
 		} catch (FileNotFoundException e) {
