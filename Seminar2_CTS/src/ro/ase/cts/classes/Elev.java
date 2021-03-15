@@ -7,17 +7,11 @@ public class Elev extends Aplicant {
 	private String tutore;
 	private static float sumaFinanteare = 30;
 
-	public int getClasa() {
-		return clasa;
-	}
 
 	public void setClasa(int i) {
 		this.clasa = i;
 	}
 
-	public String getTutore() {
-		return tutore;
-	}
 
 	public void setTutore(String tutore) {
 		this.tutore = tutore;
@@ -39,10 +33,8 @@ public class Elev extends Aplicant {
 		this.tutore = tutore;
 	}
 
-	public int finantare() {
-		int s = 30;
-		System.out.println("Angajatul " + getNume() + " " + getPrenume() + " primeste" + s + " Euro/zi in proiect.");
-		return s;
+	public void afiseazaSumaFinantare() {
+		System.out.println("Angajatul " + getNume() + " " + getPrenume() + " primeste" + sumaFinanteare + " Euro/zi in proiect.");
 	}
 
 	@Override

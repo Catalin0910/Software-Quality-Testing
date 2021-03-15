@@ -26,10 +26,6 @@ public abstract class Aplicant {
 		this.prenume = prenume;
 	}
 
-	public int getVarsta() {
-		return varsta;
-	}
-
 	public void setVarsta(int varsta) {
 		this.varsta = varsta;
 	}
@@ -44,17 +40,12 @@ public abstract class Aplicant {
 
 	}
 
-	public int getPunctaj() {
-		return punctaj;
-	}
-
 	public void setPunctaj(int punctaj) {
 		this.punctaj = punctaj;
 	}
 
 	public Aplicant() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect) {
@@ -67,10 +58,6 @@ public abstract class Aplicant {
 		this.denumiriProiect = denumireProiect;
 	}
 
-	public int getNrProiecte() {
-		return nrProiecte;
-	}
-
 	public void setNrProiecte(int nrProiecte, String[] denumiriProiecte) {
 		this.nrProiecte = nrProiecte;
 		this.denumiriProiect = denumiriProiecte;
@@ -80,9 +67,8 @@ public abstract class Aplicant {
 
 	@Override
 	public String toString() {
-		return "Aplicant [nume=" + nume + ", prenume=" + prenume + ", varsta=" + varsta + ", punctaj=" + punctaj
-				+ ", nrProiecte=" + nrProiecte + ", denumiriProiect=" + Arrays.toString(denumiriProiect) + "]";
+		return "Aplicantul " + nume + " " + prenume + "cu varsta " + varsta + ", a obtinut punctajul de " + punctaj
+				+ " pentru proiectele " + nrProiecte + ", denumiriProiect=" + Arrays.toString(denumiriProiect);
 	}
-	
-	
+
 }

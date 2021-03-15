@@ -7,16 +7,8 @@ public class Angajat extends Aplicant {
 	private int salariu;
 	private static float sumaFinanteare = 10;
 
-	public String getOcupatie() {
-		return ocupatie;
-	}
-
 	public void setOcupatie(String ocupatie) {
 		this.ocupatie = ocupatie;
-	}
-
-	public int getSalariu() {
-		return salariu;
 	}
 
 	public void setSalariu(int salariu) {
@@ -40,11 +32,9 @@ public class Angajat extends Aplicant {
 		return "Angajat: " + super.toString() + "Ocupatie=" + ocupatie + ", salariu=" + salariu;
 	}
 
-	public int finantare() {
-		int s = 10;
-		// TODO Auto-generated method stub
-		System.out.println("Angajatul " + getNume() + " " + getPrenume() + " primeste" + s + " Euro/zi in proiect.");
-		return s;
+	public void afiseazaSumaFinantare() {
+		System.out.println(
+				"Angajatul " + getNume() + " " + getPrenume() + " primeste" + sumaFinanteare + " Euro/zi in proiect.");
 	}
 
 	@Override
