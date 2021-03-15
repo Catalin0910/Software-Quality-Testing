@@ -8,6 +8,7 @@ import ro.ase.cts.classes.Aplicant;
 import ro.ase.cts.classes.Proiect;
 import ro.ase.cts.classes.Student;
 import ro.ase.cts.readers.AplicantReader;
+import ro.ase.cts.readers.ElevReader;
 import ro.ase.cts.readers.StudentReader;
 
 public class Program {
@@ -26,7 +27,7 @@ public class Program {
 		AplicantReader aplicantReader = new StudentReader("studenti.txt");
 		try {
 			listaAplicanti = citesteAplicanti(aplicantReader);
-			//listaAplicanti = citesteAplicanti(new ElevReader("elevi.txt"));
+			listaAplicanti = citesteAplicanti(new ElevReader("elevi.txt"));
 			Proiect poriect = new Proiect(80);
 			for (Aplicant angajat : listaAplicanti) {
 				System.out.println(angajat.toString());
@@ -34,7 +35,6 @@ public class Program {
 				System.out.println(angajat.getSumaFinantata());
 			}
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
