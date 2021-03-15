@@ -9,23 +9,17 @@ import java.util.Scanner;
 public abstract class AplicantReader {
 	private String fileName;
 
-	
-	
 	public AplicantReader(String fileName) {
 		super();
 		this.fileName = fileName;
 	}
 
-
-
 	public String getFileName() {
 		return fileName;
 	}
 
-
-
 	public abstract List<Aplicant> citesteAplicant() throws FileNotFoundException, NumberFormatException;
-	
+
 	public void readAplicant(Scanner input, Aplicant aplicant) {
 		String nume = input.next();
 		String prenume = input.next();
@@ -35,7 +29,7 @@ public abstract class AplicantReader {
 		String[] vect = new String[5];
 		for (int i = 0; i < nr; i++)
 			vect[i] = input.next();
-		
+
 		aplicant.setNume(nume);
 		aplicant.setPrenume(prenume);
 		aplicant.setVarsta(varsta);

@@ -12,10 +12,10 @@ import ro.ase.cts.classes.Elev;
 public class ElevReader extends AplicantReader {
 	public ElevReader(String fileName) {
 		super(fileName);
-		// TODO Auto-generated constructor stub
+
 	}
 
-	public  List<Aplicant> citesteAplicant( ) throws FileNotFoundException {
+	public List<Aplicant> citesteAplicant() throws FileNotFoundException {
 		Scanner input2 = new Scanner(new File(super.getFileName()));
 		input2.useDelimiter(",|\n");
 		List<Aplicant> aplicants = new ArrayList<Aplicant>();

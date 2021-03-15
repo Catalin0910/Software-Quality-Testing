@@ -12,7 +12,6 @@ import ro.ase.cts.classes.Aplicant;
 public class AngajatReader extends AplicantReader {
 	public AngajatReader(String fileName) {
 		super(fileName);
-		// TODO Auto-generated constructor stub
 	}
 
 	public List<Aplicant> citesteAplicant() throws FileNotFoundException {
