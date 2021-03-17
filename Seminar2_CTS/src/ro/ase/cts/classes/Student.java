@@ -33,7 +33,7 @@ public class Student extends Aplicant {
 	}
 
 	public void afiseazaSumaFinantare() {
-		System.out.println("Studentul " + getNume() + " " + getPrenume() + " primeste" + sumaFinanteare + " Euro/zi in proiect.");
+		System.out.println("Studentul " + getNume() + " " + getPrenume() + " primeste " + sumaFinanteare + " Euro/zi in proiect.");
 	}
 
 	@Override

@@ -23,6 +23,9 @@ public class Program {
 		System.out.println("Suma de finantare este: " + Student.getSumaFinanteare());
 		System.out.println("Suma de finantare este: " + Angajat.getSumaFinanteare());
 		
+		Student student = new Student();
+		student.afiseazaSumaFinantare();
+		
 		List<Aplicant> listaAplicanti;
 		AplicantReader aplicantReader = new StudentReader("studenti.txt");
 		try {
@@ -33,10 +36,12 @@ public class Program {
 				System.out.println(angajat.toString());
 				angajat.afiseazaStatus(poriect);
 				System.out.println(angajat.getSumaFinantata());
+				
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
+
 	}
 
 }
