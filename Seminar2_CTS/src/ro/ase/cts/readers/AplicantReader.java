@@ -25,16 +25,16 @@ public abstract class AplicantReader {
 		String prenume = input.next();
 		int varsta = input.nextInt();
 		int punctaj = input.nextInt();
-		int nr = input.nextInt();
+		int numar = input.nextInt();
 		String[] vect = new String[5];
-		for (int i = 0; i < nr; i++)
+		for (int i = 0; i < numar; i++)
 			vect[i] = input.next();
 
 		aplicant.setNume(nume);
 		aplicant.setPrenume(prenume);
 		aplicant.setVarsta(varsta);
 		aplicant.setPunctaj(punctaj);
-		aplicant.setNrProiecte(nr, vect);
+		aplicant.setNrProiecte(numar, vect);
 
 	}
 }
