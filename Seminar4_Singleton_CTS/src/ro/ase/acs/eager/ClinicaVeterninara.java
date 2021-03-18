@@ -1,4 +1,4 @@
-package ro.ase.cts.eager;
+package ro.ase.acs.eager;
 
 public class ClinicaVeterninara {
 
