@@ -1,5 +1,7 @@
 package ro.ase.cts.builderv2.classes;
 
+import ro.ase.cts.builer.innerclass.IBuilder;
+
 public class Rezervare {
 
 	private boolean hasMancare;
