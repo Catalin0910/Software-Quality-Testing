@@ -14,15 +14,12 @@ public class Grupa {
     private int nrGrupa;
 
     public Grupa(int nrGrupa){
-    
     	if(nrGrupa<1000 || nrGrupa > 1100) {
     		throw new IndexOutOfBoundsException();
     	}else {
     		this.nrGrupa=nrGrupa;
     	}
-    	
-        
-        studenti=new ArrayList<>();
+    	studenti=new ArrayList<>();
     }
 
     public void importaStudenti(List<IStudent> studenti){
@@ -56,18 +53,13 @@ public class Grupa {
 	public List<IStudent> getStudenti() {
 		return studenti;
 	}
-
-	public void setStudenti(List<IStudent> studenti) {
-		this.studenti = studenti;
+	
+	public List<IStudent> getListaStudenti() {
+		return this.studenti;
 	}
 
 	public int getNrGrupa() {
 		return nrGrupa;
 	}
-
-	public void setNrGrupa(int nrGrupa) {
-		this.nrGrupa = nrGrupa;
-	}
-    
 
 }
