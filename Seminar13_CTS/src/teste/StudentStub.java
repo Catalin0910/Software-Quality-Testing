@@ -4,7 +4,7 @@ import java.util.List;
 
 import clase.IStudent;
 
-class StudentDummy implements IStudent{
+public class StudentStub implements IStudent{
 
 	@Override
 	public String getNume() {
@@ -33,13 +33,13 @@ class StudentDummy implements IStudent{
 	@Override
 	public float calculeazaMedie() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 9;
 	}
 
 	@Override
 	public int getNota(int index) {
 		// TODO Auto-generated method stub
-		return 0;
+		return 9;
 	}
 
 	@Override
@@ -48,4 +48,5 @@ class StudentDummy implements IStudent{
 		return false;
 	}
 
+	
 }
